@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="abc" extends="struts-default" >
+
+<!-- Registration -->
+
+	<action name="regiterfrm">
+		<result >/register.jsp</result>
+	</action>
+	
+	<action name="register" class="com.controller.RegisterAction">
+	<result name="success">/thankyou.jsp</result>
+		<result name="error">/home.jsp</result>
+		</action>
+		
+	<!-- Login system -->
+	
+	<action name="loginfrm">
+		<result>/login.jsp</result>
+	</action>
+	<action name="forgotpassword">
+		<result name="success">/forgotpassword.jsp</result>
+	</action>
+	<action name="updatedetails" class="com.controller.ForgotpasswordAction">
+		<result name="success">/updatedetails.jsp</result>
+	</action>
+	
+	
+	
+	<action name="login" class="com.controller.LoginAction" method="execute">
+		<result name="success">/welcome.jsp</result>
+		<result name="login">/login-error.jsp</result>
+	</action>
+	
+	<action name="forgot" class="com.controller.ForgotpasswordAction" method="execute">
+		<result name="success">/successfull.jsp</result>
+		</action>
+	<action name="logout" class="com.controller.LoginAction" method="logout">
+			<result name="success">/logout.jsp</result>
+	</action>
+	</package>
+</struts> 

@@ -1,0 +1,51 @@
+package com.controller;
+
+import com.User.Users;
+import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class RegisterAction extends ActionSupport 
+{
+	
+	
+	private Users users=new Users();
+	String msg=" ";
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String execute() throws Exception
+	{
+		System.out.println(users);
+		if(users.getUsername().equals("manohar"))
+		{
+			msg="Registration Successful";
+			return "success";
+		}
+		else
+		{
+			msg="Error in registration";
+			return "error";
+		}
+	}
+}
+

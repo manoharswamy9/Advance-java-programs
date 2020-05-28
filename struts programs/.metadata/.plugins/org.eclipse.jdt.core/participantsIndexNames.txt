@@ -1,0 +1,17 @@
+INDEX VERSION 1.131
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3912942196.index
+\MP3\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3925556792.index
+\strutscrud\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\438710725.index
+\MP2\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3984008537.index
+\Struts2CRUD\src\main\java
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1463609203.index
+\firststruts\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2172878250.index
+\MP3\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1047431293.index
+\sample\src
+E:\manohar\struts programs\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2564816670.index
+\miniproject2\src

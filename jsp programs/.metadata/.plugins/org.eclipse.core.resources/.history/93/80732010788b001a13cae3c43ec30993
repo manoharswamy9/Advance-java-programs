@@ -1,0 +1,8 @@
+package com.action;
+
+public class helloworld {
+	public String execute() {
+        System.out.println("HelloWorldAction - called");
+        return "success";
+    }
+}

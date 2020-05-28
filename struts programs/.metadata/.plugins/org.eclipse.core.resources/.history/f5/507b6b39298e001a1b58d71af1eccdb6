@@ -1,0 +1,32 @@
+package com.controller;
+
+import com.User.Users;
+import com.opensymphony.xwork2.ActionSupport;
+public class LoginAction extends ActionSupport{
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8083120409456575821L;
+private Users users=new Users();
+	
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String execute() throws Exception
+	{
+		Users u=new Users();
+		if(u.getPassword().equals("123456"))
+		{
+			return "success";
+		}
+		else
+		{
+			return "login";
+		}
+	}
+}

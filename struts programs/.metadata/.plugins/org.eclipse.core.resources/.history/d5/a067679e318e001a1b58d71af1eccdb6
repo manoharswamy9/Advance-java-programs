@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HOME PAGE</title>
+<style type="text/css">
+.button-registerfrm {background-color: green;color: white;}
+.button-loginfrm {background-color: red;color: white;margin-left: 30%;}
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<a href="regiterfrm"><button class="button-report" type="button">Register</button></a>|
+	<a href="loginfrm">Login</a>
+	<span style="color: red;"><s:property value="msg" /></span>
+</body>
+</html>

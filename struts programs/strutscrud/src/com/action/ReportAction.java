@@ -1,0 +1,58 @@
+package com.action;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+import com.bean.Emp;
+import com.dao.Admin;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ReportAction extends ActionSupport {
+
+	private static final long serialVersionUID = 6329394260276112660L;
+	ResultSet rs = null;
+	Emp bean = null;
+	List<Emp> beanList = null;
+	Admin admin = new Admin();
+	private boolean noData = false;
+	@Override
+	public String execute() throws Exception {
+	try {
+	beanList = new ArrayList<Emp>();
+	rs = admin.report();
+	int i = 0;
+	if (rs != null) {
+	while (rs.next()) {
+	i++;
+	bean = new Emp();
+	bean.setSrNo(i);
+	bean.setUname(rs.getString("uname"));
+	bean.setUemail(rs.getString("uemail"));
+	bean.setUpass(rs.getString("upass").replaceAll("(?s).", "*"));
+	bean.setUdeg(rs.getString("udeg"));
+	beanList.add(bean);
+	}
+	}
+	if (i == 0) {
+	noData = false;
+	} else {
+	noData = true;
+	}
+	} catch (Exception e) {
+	e.printStackTrace();
+	}
+	return "REPORT" ;
+	}
+	public boolean isNoData() {
+	return noData;
+	}
+	public void setNoData(boolean noData) {
+	this.noData = noData;
+	}
+	public List<Emp> getBeanList() {
+	return beanList;
+	}
+	public void setBeanList(List<Emp> beanList) {
+	this.beanList = beanList;
+	}
+	
+}

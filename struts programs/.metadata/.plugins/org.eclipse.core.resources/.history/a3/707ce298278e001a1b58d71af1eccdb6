@@ -1,0 +1,28 @@
+package com.controller;
+
+import com.User.Users;
+
+public class LoginAction {
+private Users users=new Users();
+	
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String execute() throws Exception
+	{
+		Users u=new Users();
+		if(u.getPassword().equals("1234"))
+		{
+			return "success";
+		}
+		else
+		{
+			return "login";
+		}
+	}
+}

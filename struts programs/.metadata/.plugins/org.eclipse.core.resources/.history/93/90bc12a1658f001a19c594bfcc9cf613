@@ -1,0 +1,48 @@
+package com.controller;
+
+import com.User.Users;
+import com.opensymphony.xwork2.ActionSupport;
+public class LoginAction extends ActionSupport{
+
+	Users users=new Users();
+
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+	
+	String msg="";
+	
+	
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public String execute() throws Exception 
+	{
+		System.out.println(users);
+		String u=users.getUsername();
+		
+		DaoAdmin admin=new DaoAdmin();
+		int res=admin.registerUser(users);
+		
+		if(res>0)
+		{
+			msg="Registration successfull....";
+			return "success";
+		}
+		else
+		{
+			msg="Something went wrong";
+			return "error";
+		}
+		
+	}
+}

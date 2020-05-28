@@ -1,0 +1,27 @@
+package com.action;
+import com.User.Users;
+import com.opensymphony.xwork2.ActionSupport;
+public class Login extends ActionSupport {
+private Users users=new Users();
+	
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String execute() throws Exception
+	{
+		Users u=new Users();
+		if(users.getPassword().equals("1234"))
+		{
+			return "success";
+		}
+		else
+		{
+			return "login";
+		}
+	}
+}

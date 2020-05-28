@@ -1,0 +1,8 @@
+package com.dao;
+import java.sql.*;
+
+import com.lithan.model.Users;
+
+public class DaoAdmin {
+
+}

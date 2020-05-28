@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>REGISTER PAGE</title>
+<style type="text/css">
+.button-Register {background-color: green;color: white;text-align: center;font-size: 25px;border-radius: 8px;}
+div {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+form {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+<div align="center">
+<h2>Registration form</h2>
+<s:form action="register" method="post">
+<s:textfield label="First Name" name="users.firstname" placeholder="Your name.." />
+		<s:textfield label="Last Name" name="users.lastname" />
+		<s:textfield label="User Name" name="users.username" />
+		<s:password label="Password" name="users.password" />
+		<s:textfield label="Company Name" name="users.companyname" />
+		<s:textfield label="City" name="users.city" />
+		<s:textfield label="Country" name="users.country" />
+		
+		<s:submit value="Register" />
+</s:form>
+</div>
+</body>
+</html>

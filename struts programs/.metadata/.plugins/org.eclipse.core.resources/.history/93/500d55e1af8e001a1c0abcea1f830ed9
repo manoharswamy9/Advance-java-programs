@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+<package name="default" extends="struts-default">
+<action name="registeruser" class="com.action.Register">
+<result name="REGISTER">/register.jsp</result>
+</action>
+<action name="report" class="com.action.Report">
+<result name="REPORT">/report.jsp</result>
+</action>
+<action name="updatedetails" class="com.action.Update">
+<result name="UPDATE">/update.jsp</result>
+</action>
+<action name="deleterecord" class="com.action.Delete">
+<result name="DELETE">/delete.jsp</result>
+</action>
+</package>
+</struts>

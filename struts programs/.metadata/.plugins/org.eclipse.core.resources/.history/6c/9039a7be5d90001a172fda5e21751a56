@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="abc" extends="struts-default" >
+		<!--Registration-->
+		<action name="registerfrm">
+			<result>/register.jsp</result>
+		</action>
+		<action name="register" class="com.lithan.controller.RegisterAction" method="execute">
+			<result name="success">/thankyou.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		
+		<!--Login System-->
+		<action name="loginfrm">
+			<result>/login.jsp</result>
+		</action>
+		<action name="login" class="com.lithan.controller.LoginAction" method="execute">
+			<result name="success">/landing.jsp</result>
+			<result name="error">/login-error.jsp</result>
+		</action>
+		<action name="logout" class="com.lithan.controller.LoginAction" method="logout">
+			<result name="success">/logout.jsp</result>
+		</action>
+	</package>
+</struts> 

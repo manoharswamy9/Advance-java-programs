@@ -1,0 +1,38 @@
+package com.action;
+import com.User.Users;
+import com.opensymphony.xwork2.ActionSupport;
+public class Register extends ActionSupport{
+	private Users users=new Users();
+	String msg=" ";
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
+	}
+
+	public String execute() throws Exception
+	{
+		System.out.println(users);
+		if(users.getUsername().equals("neha"))
+		{
+			msg="Registration Successful";
+			return "success";
+		}
+		else
+		{
+			msg="Error in registration";
+			return "error";
+		}
+	}
+}
+}

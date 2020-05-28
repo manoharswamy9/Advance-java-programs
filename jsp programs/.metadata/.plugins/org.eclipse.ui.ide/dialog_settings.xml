@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\user\Downloads\MP2-20200502T063723Z-001\MP2\MP2\MP2"/>
+			<item value="C:\Users\user\Downloads\firststruts\firststruts"/>
+			<item value="C:\Users\user\Downloads\firststruts"/>
+			<item value="C:\Users\user\Downloads\struts2"/>
+			<item value="C:\Users\user\Downloads\struts2-create-read-update-and-delete-crud-example-using-jdbc\struts2-create-read-update-and-delete-crud-example-using-jdbc"/>
+			<item value="E:\manohar\struts programs\strutscrud"/>
+			<item value="E:\manohar\jsp programs\Registration"/>
+			<item value="C:\Users\user\Downloads\MP1-20200418T053631Z-001\MP1\MP1\MP1"/>
+			<item value="C:\Users\user\Downloads\MP1-20200418T053631Z-001\MP1\MP1\src"/>
+			<item value="C:\Users\user\Downloads\MP1-20200418T053631Z-001\MP1\MP1"/>
+			<item value="D:\sd naveen\servletsandjsp"/>
+		</list>
+	</section>
+</section>

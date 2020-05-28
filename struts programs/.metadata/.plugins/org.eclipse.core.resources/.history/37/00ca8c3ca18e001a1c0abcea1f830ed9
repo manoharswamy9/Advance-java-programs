@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>REGISTER PAGE</title>
+
+</head>
+<body>
+<h2>Registration form</h2>
+<s:form action="register" method="post">
+<s:textfield label="First Name" name="users.firstname" />
+		<s:textfield label="Last Name" name="users.lastname" />
+		<s:textfield label="User Name" name="users.username" />
+		<s:password label="Password" name="users.password" />
+		<s:textfield label="Company Name" name="users.companyname" />
+		<s:textfield label="City" name="users.city" />
+		<s:textfield label="Country" name="users.country" />
+		
+		<s:submit value="Register" />
+</s:form>
+</body>
+</html>

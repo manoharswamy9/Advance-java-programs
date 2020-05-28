@@ -1,0 +1,6 @@
+package com.action;
+import org.dao.Admin;
+import com.opensymphony.xwork2.ActionSupport;
+public class Register {
+
+}

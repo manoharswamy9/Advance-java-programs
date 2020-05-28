@@ -1,0 +1,11 @@
+package com.action;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+import com.bean.Emp;
+import com.dao.Admin;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ReportAction extends ActionSupport {
+
+}
